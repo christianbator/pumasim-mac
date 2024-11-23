@@ -11,8 +11,7 @@ softwareupdate --install-rosetta
 open -a docker # Accept license agreements and finish installation via the GUI
 ```
 
-2. Run the setup script  
-This script configures GL graphics for XQuartz:
+2. Run the setup script
 ```bash
 ./pumasim_mac_config.zsh
 ```
@@ -28,7 +27,8 @@ docker build --platform=linux/amd64 -t robobuntu:latest .
 open -a xquartz
 ```
 
-2. Run pumasim
+2. Run pumasim  
+
 Here you have an option to share a local directory with the ubuntu container. This way you can edit code locally and run it in the container. Replace `{/local/path}` with your local robotics assignment directory.
 
 This will then run the docker container in interactive mode:
