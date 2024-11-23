@@ -11,8 +11,8 @@ softwareupdate --install-rosetta
 open -a docker # Accept license agreements and finish installation via the GUI
 ```
 
-2. Run the setup script
-This script configures GL graphics for XQuartz
+2. Run the setup script  
+This script configures GL graphics for XQuartz:
 ```bash
 ./pumasim_mac_config.zsh
 ```
