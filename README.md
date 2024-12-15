@@ -5,7 +5,7 @@ Steps to run the puma simulator on M* macs.
 1. Install Docker, XQuartz (graphics forwarding), and Rosetta (x86 translation)
 ```bash
 brew install --cask docker
-brew install --cask --no-quarantine xquartz
+brew install --cask xquartz
 softwareupdate --install-rosetta
 
 open -a docker # Accept license agreements and finish installation via the GUI
@@ -18,7 +18,7 @@ open -a docker # Accept license agreements and finish installation via the GUI
 
 3. Build the Docker image:
 ```bash
-docker build --platform=linux/amd64 -t robobuntu:latest .
+docker build --no-cache --platform=linux/amd64 -t robobuntu:latest .
 ```
 
 ## Running

@@ -15,7 +15,7 @@ VOLUME /tmp/.X11-unix:/tmp/.X11-unix
 #
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y tzdata
-RUN apt-get install -y build-essential mesa-utils libgl1-mesa-glx libglu-dev libxmu-dev libnewmat10-dev libqhull-dev libopencv-dev cmake libsoil1 libglew2.1
+RUN apt-get install -y build-essential mesa-utils libgl1-mesa-glx libglu-dev libxmu-dev libnewmat10-dev libqhull-dev libopencv-dev cmake libsoil1 libglew2.1 gnuplot
 
 #
 # Puma Simulator
